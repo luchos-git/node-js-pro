@@ -17,3 +17,6 @@ pasos para crear un proyecto:
     - node index.js
     - npm run start (ocurre cuando en el index.js le agregamos el script)
     - npm run dev (ocurre cuando en el package.json tiene en el script el dev)
+
+
+extencion extra: thunder client
