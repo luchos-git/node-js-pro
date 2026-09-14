@@ -1,0 +1,5 @@
+pasos para crear un proyecto:
+
+1) creamos la carpeta del proyecto
+2) inicializar el proyecto y crea el archivo package.json:
+    npm init -y
