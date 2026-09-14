@@ -1,5 +1,19 @@
 pasos para crear un proyecto:
 
 1) creamos la carpeta del proyecto
-2) inicializar el proyecto y crea el archivo package.json:
+2) inicializar el proyecto y crea el archivo package.json (descripcion del proyecto, dependencias de terceros. script ejecucion):
     npm init -y
+3) en package.json, modifica type="module" y agregamos un script llamado "start":"node index.js"
+    para el desarrollo: "dev": "node --watch index.js" y va en la parte de script, toma los cambios en forma automatica
+4) instalamos express:
+    npm i express
+5) creamos servidor en index.js
+    import express from 'express'
+    const app = express()
+    const port = 3000
+
+    app.listen (port, () => {console.log(`servidor en puerto ${port}`)})
+6) ejecutar el servidor:
+    - node index.js
+    - npm run start (ocurre cuando en el index.js le agregamos el script)
+    - npm run dev (ocurre cuando en el package.json tiene en el script el dev)
